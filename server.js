@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const HF_API_KEY = "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";
+const HF_API_KEY = "900";
 
 // Business knowledge base
 const businessKnowledge = {
@@ -101,4 +101,5 @@ app.get("/health", (req, res) => {
 app.listen(3000, () => {
   console.log("🤖 AI Server running on http://localhost:3000");
   console.log("📡 Endpoint: POST http://localhost:3000/chat");
+
 });
